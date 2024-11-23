@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Website with Login & Registration Form{% endblock %}</title>
+    
+    <!-- Link to CSS -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">CodingLab</a>
+
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">Home</a>
+                    <a href="#" class="nav_link">Product</a>
+                    <a href="#" class="nav_link">Services</a>
+                    <a href="#" class="nav_link">Contact</a>
+                </li>
+            </ul>
+
+            <button class="button" id="form-open">Login</button>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home">
+        {% block content %}
+        <!-- Content goes here -->
+        {% endblock %}
+    </section>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
